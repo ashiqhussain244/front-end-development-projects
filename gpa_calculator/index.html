@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Gpa calculator</title>
+</head>
+
+<body style="background-color: #DADA !important">
+    <div class="container font-weight-bold">
+        <div class="row">
+            <div class="col-8 m-auto  col-md-12 bg-dark text-white p-4 rounded-2">
+                <h4 class="text-center">GPA Calculator</h4>
+                <h6 class="text-center">By Ashiq akhondi</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 bg-white p-5 col-md-12 mg-auto d-flex justify-content-around">
+                <div class="col-md-4">
+                    <div>
+                        <div class="book1 mb-3">
+                            <label>Math</label>
+                            <input class="form-control" id="bookone" type="number" placeholder="marks">
+                        </div>
+                        <div class="book2 mb-3">
+                            <label>English</label>
+                            <input class="form-control" id="bookTwo" type="number" placeholder="marks">
+                        </div>
+                        <div class="book3 mb3">
+                            <label>Chemistry</label>
+                            <input class="form-control" id="bookthree" type="number" placeholder="marks">
+                        </div>
+                        <div class="book4 mb-3">
+                            <label>Biology</label>
+                            <input class="form-control" id="bookfour" type="number" placeholder="marks">
+                        </div>
+                        <div class="book5 mb-3">
+                            <label>Physics</label>
+                            <input class="form-control" id="bookfive" type="number" placeholder="marks">
+                        </div>
+                        <div>
+                            <button class="btn btn-warning col-12" onclick="calculate()">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex align-items-center">
+                    <div>
+                        <table class="table table-bordered border-dark">
+                            <tr>
+                                <td>Total Marks:</td>
+                                <td>500</td>
+                            </tr>
+                            <tr>
+                                <td>Obtained Marks:</td>
+                                <td id="obtain"></td>
+                            </tr>
+                            <tr>
+                                <td>Percentage:</td>
+                                <td id="percent"></td>
+                            </tr>
+                            <tr>
+                                <td>Grade:</td>
+                                <td id="grade"></td>
+                            </tr>
+                            <tr>
+                                <td>Remarks:</td>
+                                <td id="Remarks"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
